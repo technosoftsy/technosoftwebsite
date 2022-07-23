@@ -20,22 +20,41 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'local' );
 
+
+
+
+if (strstr($_SERVER['SERVER_NAME'],'technosoft.local')) {
+	define( 'DB_NAME', 'local' );
 /** Database username */
 define( 'DB_USER', 'root' );
-
 /** Database password */
 define( 'DB_PASSWORD', 'root' );
-
 /** Database hostname */
-define( 'DB_HOST', 'localhost1' );
-
+define( 'DB_HOST', 'localhost' );
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+}else{
+  
+	define( 'DB_NAME', 'technosoft' );
+ 
+	define( 'DB_USER', 'technosoft' );
+	 
+	define( 'DB_PASSWORD', 'Asdf@13579' );
+	/** Database hostname */
+	define( 'DB_HOST', 'abdlwahhab39126.ipagemysql.com' );
+	 
+	/** Database charset to use in creating database tables. */
+	define( 'DB_CHARSET', 'utf8mb4' );
+	 
+	/** The database collate type. Don't change this if in doubt. */
+	define( 'DB_COLLATE', '' );
+
+
+
+}
 
 /**#@+
  * Authentication unique keys and salts.
