@@ -11,14 +11,8 @@ if($cozipress_hs_breadcrumb == '1') {
                 <div class="col-12">
                     <div class="breadcrumb-content">
                         <div class="breadcrumb-heading">
-								<h1><?php cozipress_breadcrumb_title();	?></h1>
                         </div>
-						<ol class="breadcrumb-list">
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fa fa-home"></i></a></li>
-							<li>
-								<?php cozipress_breadcrumb_title();	?>
-							</li>
-						</ol>
+						
                     </div>                    
                 </div>
             </div>
