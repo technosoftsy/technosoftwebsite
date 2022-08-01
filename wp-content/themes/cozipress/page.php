@@ -13,7 +13,14 @@
  */
 
 get_header();
+
+
+
 ?>
+
+
+ 
+
 
 <section id="post-section" class="post-section st-py-default kg">
 	<div class="container">
@@ -34,8 +41,9 @@ get_header();
 					}
 					else
 					{ 
+						// Haldun   contorl area page width  in main page 
 					
-						echo '<div class="col-lg-'.( !is_active_sidebar( "cozipress-sidebar-primary" ) ?"12" :"8" ).'">';
+						echo '<div class="col-lg-'.( !is_active_sidebar( "cozipress-sidebar-primary" ) ?"12" :"" ).'">';
 						
 						
 					} 
@@ -63,8 +71,8 @@ get_header();
 						get_sidebar('woocommerce');
 					}
 				}else{
-				
-				get_sidebar(); 
+				// Haldun hide search and post area from all pages
+			//	get_sidebar(); 
 				} 
 			?>
 		</div>

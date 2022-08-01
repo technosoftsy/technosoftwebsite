@@ -167,3 +167,12 @@ require_once get_template_directory() . '/inc/extras.php';
  */
  require_once get_template_directory() . '/inc/cozipress-customizer.php';
 
+
+ function contactusfile(){
+
+wp_enqueue_style( 'technosoft_main_style', get_theme_file_uri('assets/css/customstyle/css/style.css') );
+
+ }
+
+ add_action( 'wp_enqueue_scripts', 'contactusfile') ;
+
